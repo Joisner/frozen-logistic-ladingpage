@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
 
   <!-- ===== SEO PRIMARIO ===== -->
-  <title>FROZEN LOGÍSTICA™ | Almacenamiento en Frío y Transporte Refrigerado en Barranquilla</title>
+  <title>FROZEN CARGO TRANSPORT™ | Almacenamiento en Frío y Transporte Refrigerado en Barranquilla</title>
   <meta name="description"
     content="Almacenamiento refrigerado y congelado, transporte de carga y gestión de inventarios en Barranquilla, Colombia. 600 posiciones en congelación, 135 en refrigeración, 3 muelles de carga. Cotice hoy.">
   <meta name="keywords"
@@ -20,34 +20,273 @@
 
   <!-- ===== OPEN GRAPH / SOCIAL ===== -->
   <meta property="og:type" content="website">
-  <meta property="og:site_name" content="FROZEN LOGÍSTICA™">
-  <meta property="og:title" content="FROZEN LOGÍSTICA™ | Almacenamiento en Frío y Transporte Refrigerado">
+  <meta property="og:site_name" content="FROZEN CARGO TRANSPORT™">
+  <meta property="og:title" content="FROZEN CARGO TRANSPORT™ | Almacenamiento en Frío y Transporte Refrigerado">
   <meta property="og:description"
     content="Soluciones expertas en almacenamiento a temperatura controlada, transporte y gestión de inventarios en Barranquilla, Colombia.">
   <meta property="og:image" content="https://frozencargotransport.com/es/assets/images/3.jpg-841x846.jpg">
   <meta property="og:url" content="https://frozencargotransport.com/es/">
   <meta property="og:locale" content="es_CO">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="FROZEN LOGÍSTICA™ | Almacenamiento en Frío y Transporte Refrigerado">
+  <meta name="twitter:title" content="FROZEN CARGO TRANSPORT™ | Almacenamiento en Frío y Transporte Refrigerado">
   <meta name="twitter:description"
     content="Cadena de frío completa: almacenamiento, transporte y trazabilidad en Barranquilla, Colombia.">
   <meta name="twitter:image" content="https://frozencargotransport.com/es/assets/images/3.jpg-841x846.jpg">
 
   <!-- ===== FAVICON ===== -->
-  <link rel="icon" type="image/x-icon" href="../favicon.ico">
-  <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon-16.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="../assets/images/favicon-192.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="../assets/images/ICONO.png">
+  <link rel="apple-touch-icon" href="../assets/images/ICONO.png">
   <!-- ===== FUENTES ===== -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="../css/style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <link rel="stylesheet" href="../css/style.css">
+
+
+  <style id="frozen-mission-vision-styles">
+    /* =========================================================
+       MISIÓN & VISIÓN — FROZEN CARGO TRANSPORT
+       Background photo + glass cards
+       ========================================================= */
+    .frozen-purpose {
+      position: relative;
+      isolation: isolate;
+      overflow: hidden;
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, .26) 0%, rgba(255, 255, 255, .34) 100%),
+        url("../assets/images/transporte.jpeg") center center / cover no-repeat;
+    }
+
+    .frozen-purpose::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      background: linear-gradient(180deg,
+          rgba(255, 255, 255, .12) 0%,
+          rgba(255, 255, 255, .20) 48%,
+          rgba(255, 255, 255, .28) 100%);
+      pointer-events: none;
+    }
+
+    .frozen-purpose .container {
+      position: relative;
+      z-index: 1;
+    }
+
+    .frozen-purpose-head {
+      max-width: 850px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+
+    .frozen-purpose-head .section-lead {
+      max-width: 720px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .frozen-purpose-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 24px;
+      margin-top: 42px;
+    }
+
+    .frozen-purpose-card {
+      position: relative;
+      min-height: 390px;
+      padding: 38px 38px 42px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, .78);
+      border-radius: 18px;
+      background: rgba(255, 255, 255, .56);
+      box-shadow:
+        0 24px 55px rgba(16, 43, 77, .13),
+        inset 0 1px 0 rgba(255, 255, 255, .88),
+        inset 0 -1px 0 rgba(15, 89, 180, .08);
+      -webkit-backdrop-filter: blur(12px) saturate(115%);
+      backdrop-filter: blur(12px) saturate(115%);
+      transition: transform .35s ease, box-shadow .35s ease, background .35s ease;
+    }
+
+    .frozen-purpose-card::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 3px;
+      background: linear-gradient(90deg, #123e91, #0d86ff);
+      opacity: .9;
+    }
+
+    .frozen-purpose-card:hover {
+      transform: translateY(-5px);
+      background: rgba(255, 255, 255, .63);
+      box-shadow:
+        0 30px 65px rgba(16, 43, 77, .18),
+        inset 0 1px 0 rgba(255, 255, 255, .92);
+    }
+
+    .frozen-purpose-number {
+      position: absolute;
+      top: 28px;
+      right: 30px;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: .04em;
+      color: rgba(26, 48, 76, .48);
+    }
+
+    .frozen-purpose-icon {
+      width: 50px;
+      height: 50px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 27px;
+      border-radius: 50%;
+      background: rgba(226, 241, 255, .72);
+      border: 1px solid rgba(255, 255, 255, .78);
+      color: #0877df;
+      font-size: 19px;
+      box-shadow: 0 8px 20px rgba(8, 119, 223, .08);
+    }
+
+    .frozen-purpose-content .eyebrow {
+      margin-bottom: 10px;
+      color: #0877df;
+    }
+
+    .frozen-purpose-content h3 {
+      margin: 0 0 18px;
+      color: #15243a;
+      font-size: clamp(26px, 3vw, 35px);
+      line-height: 1.08;
+      letter-spacing: -.025em;
+    }
+
+    .frozen-purpose-content>p:last-child {
+      margin: 0;
+      color: #3f5879;
+      font-size: 16px;
+      line-height: 1.75;
+    }
+
+    @media (max-width: 820px) {
+      .frozen-purpose-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .frozen-purpose-card {
+        min-height: 0;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .frozen-purpose {
+        background-position: 62% center;
+      }
+
+      .frozen-purpose-grid {
+        gap: 18px;
+        margin-top: 30px;
+      }
+
+      .frozen-purpose-card {
+        padding: 30px 24px 34px;
+        border-radius: 15px;
+        background: rgba(255, 255, 255, .60);
+      }
+
+      .frozen-purpose-number {
+        top: 22px;
+        right: 22px;
+      }
+
+      .frozen-purpose-icon {
+        margin-bottom: 22px;
+      }
+
+      .frozen-purpose-content>p:last-child {
+        font-size: 15px;
+        line-height: 1.68;
+      }
+    }
+  </style>
+
+  <style id="inter-global-typography">
+    /* ===== TIPOGRAFÍA GLOBAL: INTER ===== */
+    html,
+    body,
+    body * {
+      font-family: "Inter", Arial, Helvetica, sans-serif !important;
+    }
+
+    /* Texto normal */
+    body,
+    p,
+    li,
+    span,
+    label,
+    input,
+    select,
+    textarea,
+    option {
+      font-weight: 400;
+    }
+
+    /* Textos secundarios */
+    .hero-lead,
+    .section-lead,
+    .identity-tagline,
+    .footer-brand>p,
+    .form-note {
+      font-weight: 300;
+    }
+
+    /* Jerarquía fuerte */
+    h1,
+    h2,
+    h3,
+    h4,
+    strong,
+    .btn,
+    .eyebrow,
+    .main-nav a,
+    .brand-text,
+    .identity-name,
+    .stat-num,
+    .stat-unit,
+    .service-num,
+    .contact-value,
+    .contact-role,
+    .footer-col h4,
+    .footer-bottom,
+    .trust-item strong,
+    .sector-card>span,
+    .coverage-item strong {
+      font-weight: 700;
+    }
+
+    em {
+      font-family: "Inter", Arial, Helvetica, sans-serif !important;
+      font-style: italic;
+      font-weight: 700;
+    }
+
+    button,
+    input,
+    select,
+    textarea {
+      font-family: "Inter", Arial, Helvetica, sans-serif !important;
+    }
+  </style>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
 
   <!-- ===== DATOS ESTRUCTURADOS (schema.org) ===== -->
   <script type="application/ld+json">
@@ -56,7 +295,7 @@
   "@type": "LocalBusiness",
   "@id": "https://frozencargotransport.com/es/#organization",
   "name": "FROZEN CARGO TRANSPORT S.A.S.",
-  "alternateName": "FROZEN LOGÍSTICA",
+  "alternateName": "FROZEN CARGO TRANSPORT",
   "description": "Empresa especializada en almacenamiento a temperatura controlada, transporte de carga y gestión de inventarios en Barranquilla, Colombia.",
   "url": "https://frozencargotransport.com/es/",
   "logo": "https://frozencargotransport.com/assets/images/logo-navbar.png",
@@ -65,14 +304,14 @@
   "email": "gerencia@frozencargotransport.com",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "Vía 40 No. 71-197, Bodega 310, Centro Industrial Marysol",
-    "addressLocality": "Barranquilla",
+    "streetAddress": "Cra. 69r #77-58",
+    "addressLocality": "Bogotá",
     "addressCountry": "CO"
   },
   "geo": {
     "@type": "GeoCoordinates",
-    "latitude": 11.0106942,
-    "longitude": -74.7928764
+    "latitude": 4.6889316,
+    "longitude": -74.0870641
   },
   "areaServed": ["Barranquilla", "Cartagena", "Región Caribe", "Colombia"],
   "sameAs": [
@@ -97,22 +336,23 @@
   <!-- ============ HEADER ============ -->
   <header class="site-header" id="siteHeader">
     <div class="container header-inner">
-      <a href="#inicio" class="brand" aria-label="FROZEN LOGÍSTICA — Inicio">
+      <a href="#inicio" class="brand" aria-label="FROZEN CARGO TRANSPORT — Inicio">
         <span class="brand-mark" aria-hidden="true">
-          <img src="../assets/images/logo-navbar.png" alt="" width="48" height="32" loading="eager">
+          <img src="../assets/images/ICONO-NEGATIVO.png" alt="" width="48" height="32" loading="eager">
         </span>
-        <span class="brand-text">FROZEN<em>LOGÍSTICA</em></span>
+        <span class="brand-text">FROZEN<em>CARGO TRANSPORT</em></span>
       </a>
 
       <nav class="main-nav" id="mainNav" aria-label="Navegación principal">
         <ul>
           <li><a href="#inicio">Inicio</a></li>
           <li><a href="#nosotros">Nosotros</a></li>
+          <li class="nav-extra"><a href="#mision-vision">Misión y Visión</a></li>
           <li><a href="#servicios">Servicios</a></li>
           <li><a href="#sectores">Sectores</a></li>
-          <li><a href="#clientes">Clientes</a></li>
+          <li class="nav-extra"><a href="#clientes">Clientes</a></li>
           <li><a href="#instalaciones">Instalaciones</a></li>
-          <li><a href="#cobertura">Cobertura</a></li>
+          <li class="nav-extra"><a href="#cobertura">Cobertura</a></li>
           <li><a href="#contacto">Contacto</a></li>
         </ul>
         <div class="main-nav-foot">
@@ -130,7 +370,6 @@
 
       <div class="header-actions">
         <a href="../index.html" hreflang="en" lang="en" class="lang-switch">EN</a>
-        <a href="#contacto" class="btn btn-primary btn-sm">Cotizar ahora</a>
       </div>
 
       <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mainNav">
@@ -143,9 +382,10 @@
   <div class="identity-banner">
     <div class="container identity-banner-inner">
       <div class="identity-brand">
-        <img src="../assets/images/logo-navbar.png" alt="" class="identity-logo" width="80" height="53" loading="eager">
+        <img src="../assets/images/ICONO.png" alt="FROZEN CARGO TRANSPORT" class="identity-logo" width="160"
+          height="137" loading="eager">
         <div>
-          <p class="identity-name">FROZEN <em>CARGO TRANSPORT LOGISTICS</em></p>
+          <p class="identity-name">FROZEN <em> CARGO TRANSPORT</em></p>
           <p class="identity-tagline">Solución logística integral · Especialistas en cadena de frío</p>
         </div>
       </div>
@@ -200,8 +440,8 @@
       <div class="container split">
         <div class="media-single reveal-up">
           <div class="media-frame">
-            <img src="https://frozencargotransport.com/es/assets/images/8.jpg-1-500x684.jpg"
-              alt="Interior de la bodega de almacenamiento refrigerado de FROZEN LOGÍSTICA en Barranquilla"
+            <img src="../assets/images/operador-1.jpeg"
+              alt="Interior de la bodega de almacenamiento refrigerado de FROZEN CARGO TRANSPORT en Barranquilla"
               loading="lazy" width="500" height="684">
           </div>
         </div>
@@ -213,14 +453,66 @@
             el almacenamiento a temperatura controlada, custodia de mercancía, gestión de inventarios, transporte y
             operaciones complementarias.</p>
           <p>Contamos con un equipo humano altamente capacitado, procesos estandarizados y tecnología de monitoreo que
-            garantizan un servicio confiable, seguro y orientado a las necesidades específicas de cada cliente — desde
+            garantizan un servicio confiable, seguro y orientado a las necesidades específicas de cada cliente, desde
             la recepción del producto hasta su entrega final.</p>
           <ul class="check-list">
             <li>Trazabilidad semanal bajo Buenas Prácticas de Almacenamiento (BPA)</li>
             <li>Ingeniera de calidad a cargo de la verificación de procesos</li>
             <li>Personal certificado en manejo de montacargas</li>
-            <li>Báscula de plataforma para control preciso de entradas y salidas</li>
           </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MISIÓN Y VISIÓN ============ -->
+    <section class="section frozen-purpose" id="mision-vision">
+      <div class="container">
+        <div class="section-head reveal-up frozen-purpose-head">
+          <p class="eyebrow">Nuestro propósito</p>
+          <h2>Hacia dónde vamos y qué nos mueve</h2>
+          <p class="section-lead">
+            Una visión clara de futuro, respaldada por una misión enfocada en proteger cada eslabón de la cadena de
+            frío.
+          </p>
+        </div>
+
+        <div class="frozen-purpose-grid">
+          <article class="frozen-purpose-card frozen-purpose-card--vision reveal-up">
+            <div class="frozen-purpose-number">01</div>
+            <div class="frozen-purpose-icon" aria-hidden="true">
+              <i class="fa-solid fa-eye"></i>
+            </div>
+            <div class="frozen-purpose-content">
+              <p class="eyebrow">Visión · 2030</p>
+              <h3>VISIÓN FROZEN 2030</h3>
+              <p>
+                Ser un operador logístico referente en Colombia y Latinoamérica en soluciones integrales de cadena de
+                frío,
+                reconocidos por nuestra tecnología, excelencia operacional, sostenibilidad y capacidad de integrar
+                almacenamiento, inventarios y logística para conectar de manera eficiente a nuestros clientes con sus
+                mercados.
+              </p>
+            </div>
+          </article>
+
+          <article class="frozen-purpose-card frozen-purpose-card--mission reveal-up" style="--delay:100ms">
+            <div class="frozen-purpose-number">02</div>
+            <div class="frozen-purpose-icon" aria-hidden="true">
+              <i class="fa-solid fa-snowflake"></i>
+            </div>
+            <div class="frozen-purpose-content">
+              <p class="eyebrow">Nuestra misión</p>
+              <h3>MISIÓN FROZEN</h3>
+              <p>
+                Somos un operador logístico integral especializado en cadena de frío. Protegemos, gestionamos y
+                movilizamos
+                los productos de nuestros clientes mediante soluciones de almacenamiento, inventario y distribución
+                soportadas en tecnología, trazabilidad y excelencia operacional, garantizando la conservación y
+                continuidad
+                de la cadena de frío.
+              </p>
+            </div>
+          </article>
         </div>
       </div>
     </section>
@@ -230,8 +522,8 @@
       <div class="container split split-reverse">
         <div class="media-single reveal-up">
           <div class="media-frame">
-            <img src="../assets/images/bodega-organizada-personal.jpg"
-              alt="Personal de FROZEN LOGÍSTICA verificando inventario en los pasillos de la bodega refrigerada"
+            <img src="../assets/images/bodega organizada fria.jpg"
+              alt="Personal de FROZEN CARGO TRANSPORT verificando inventario en los pasillos de la bodega refrigerada"
               loading="lazy" width="1086" height="1448">
           </div>
         </div>
@@ -266,26 +558,16 @@
 
         <div class="service-list">
           <article class="service-row reveal-up">
-            <div class="service-num">01</div>
+            <div class="service-num"><span>01</span><i class="fa-solid fa-snowflake" aria-hidden="true"></i></div>
             <div class="service-body">
               <h3>Almacenamiento a temperatura controlada</h3>
               <p>Cuartos de refrigeración (0°C a 4°C) y congelación (-18°C) diseñados para conservar productos sensibles
                 a la temperatura, con custodia y administración de inventarios bajo control permanente.</p>
-              <ul class="pill-list">
-                <li>Picking / Packing</li>
-                <li>Cross docking</li>
-                <li>Embalaje</li>
-                <li>Maquila</li>
-                <li>Cargue y descargue</li>
-                <li>Administración y control de inventario</li>
-                <li>Túneles de congelación (choque de frío)</li>
-                <li>Trazabilidad BPA verificada</li>
-              </ul>
             </div>
           </article>
 
           <article class="service-row reveal-up" style="--delay:80ms">
-            <div class="service-num">02</div>
+            <div class="service-num"><span>02</span><i class="fa-solid fa-truck-fast" aria-hidden="true"></i></div>
             <div class="service-body">
               <h3>Transporte y distribución</h3>
               <p>Cobertura local, regional y nacional con trazabilidad en tiempo real, incluyendo traslados directos
@@ -300,7 +582,7 @@
           </article>
 
           <article class="service-row reveal-up" style="--delay:160ms">
-            <div class="service-num">03</div>
+            <div class="service-num"><span>03</span><i class="fa-solid fa-boxes-stacked" aria-hidden="true"></i></div>
             <div class="service-body">
               <h3>Gestión de inventario y trazabilidad</h3>
               <p>Verificación física y documental de cada movimiento, con reportes de ingresos, salidas y saldos
@@ -318,7 +600,7 @@
     </section>
 
     <!-- ============ SECTORES QUE ATENDEMOS ============ -->
-    <section class="section section-band" id="sectores">
+    <section class="section section-sectors" id="sectores">
       <div class="container">
         <div class="section-head reveal-up">
           <p class="eyebrow">Sectores que atendemos</p>
@@ -370,49 +652,49 @@
 
         <div class="feature-grid">
           <div class="feature-card reveal-up">
-            <div class="feature-icon" aria-hidden="true">💬</div>
+            <div class="feature-icon" aria-hidden="true"><i class="fa-solid fa-comments"></i></div>
             <h3>Asesoría permanente</h3>
             <p>Acompañamiento constante para resolver cualquier necesidad de su operación logística.</p>
           </div>
           <div class="feature-card reveal-up" style="--delay:40ms">
-            <div class="feature-icon" aria-hidden="true">⭐</div>
+            <div class="feature-icon" aria-hidden="true"><i class="fa-solid fa-user-graduate"></i></div>
             <h3>Personal altamente calificado</h3>
             <p>Equipo humano capacitado y certificado en cada proceso de la cadena de frío.</p>
           </div>
           <div class="feature-card reveal-up" style="--delay:80ms">
-            <div class="feature-icon" aria-hidden="true">🎧</div>
+            <div class="feature-icon" aria-hidden="true"><i class="fa-solid fa-headset"></i></div>
             <h3>Servicio al cliente personalizado</h3>
             <p>Atención directa y ajustada a las necesidades específicas de cada cliente.</p>
           </div>
           <div class="feature-card reveal-up" style="--delay:120ms">
-            <div class="feature-icon" aria-hidden="true">🌡️</div>
+            <div class="feature-icon" aria-hidden="true"><i class="fa-solid fa-temperature-low"></i></div>
             <h3>Monitoreo de temperatura 24/7</h3>
             <p>Control permanente de las condiciones de refrigeración y congelación en tiempo real.</p>
           </div>
           <div class="feature-card reveal-up" style="--delay:160ms">
-            <div class="feature-icon" aria-hidden="true">📍</div>
+            <div class="feature-icon" aria-hidden="true"><i class="fa-solid fa-satellite-dish"></i></div>
             <h3>Rastreo satelital de vehículos</h3>
             <p>Trazabilidad en tiempo real de la flota durante todo el trayecto de transporte.</p>
           </div>
           <div class="feature-card reveal-up" style="--delay:200ms">
-            <div class="feature-icon" aria-hidden="true">📋</div>
+            <div class="feature-icon" aria-hidden="true"><i class="fa-solid fa-clipboard-list"></i></div>
             <h3>Control de inventarios</h3>
             <p>Verificación física y documental permanente de entradas, salidas y saldos.</p>
           </div>
           <div class="feature-card reveal-up" style="--delay:240ms">
-            <div class="feature-icon" aria-hidden="true">⚡</div>
+            <div class="feature-icon" aria-hidden="true"><i class="fa-solid fa-plug-circle-bolt"></i></div>
             <h3>Respaldo planta eléctrica</h3>
             <p>Generación eléctrica de respaldo que garantiza la temperatura sin interrupciones.</p>
           </div>
           <div class="feature-card reveal-up" style="--delay:280ms">
-            <div class="feature-icon" aria-hidden="true">🛡️</div>
+            <div class="feature-icon" aria-hidden="true"><i class="fa-solid fa-shield-halved"></i></div>
             <h3>Pólizas de seguro todo riesgo</h3>
             <p>Cobertura integral para proteger su mercancía durante el almacenamiento y el transporte.</p>
           </div>
           <div class="feature-card reveal-up" style="--delay:320ms">
-            <div class="feature-icon" aria-hidden="true">📹</div>
+            <div class="feature-icon" aria-hidden="true"><i class="fa-solid fa-video"></i></div>
             <h3>Sistema de vigilancia especializada</h3>
-            <p>Circuito cerrado de seguridad y vigilancia permanente dentro del Parque Industrial Marysol.</p>
+            <p>Circuito cerrado de seguridad y vigilancia permanente en las instalaciones.</p>
           </div>
         </div>
       </div>
@@ -457,8 +739,8 @@
         <div class="section-head reveal-up">
           <p class="eyebrow">Capacidad instalada</p>
           <h2>Infraestructura pensada para el producto, no solo para el espacio</h2>
-          <p class="section-lead">Ubicados en el Centro Industrial Marysol, Vía 40 No. 71-197, Bodega 310, Barranquilla
-            — a minutos de los principales corredores logísticos de la ciudad.</p>
+          <p class="section-lead">Ubicados en Cra. 69r #77-58, Bogotá, con acceso a los principales corredores
+            logísticos de la ciudad.</p>
         </div>
 
         <div class="stat-grid">
@@ -485,17 +767,17 @@
         </div>
 
         <div class="gallery reveal-up" id="gallery">
-          <img src="https://frozencargotransport.com/es/assets/images/4.jpg-547x469.jpg"
-            alt="Bodega de almacenamiento en frío FROZEN LOGÍSTICA" loading="lazy" width="547" height="469">
-          <img src="https://frozencargotransport.com/es/assets/images/7.jpg-547x367.jpg"
-            alt="Área de congelación FROZEN LOGÍSTICA" loading="lazy" width="547" height="367">
-          <img src="https://frozencargotransport.com/es/assets/images/7.jpeg-674x419.jpg"
-            alt="Muelle de carga y descarga FROZEN LOGÍSTICA" loading="lazy" width="674" height="419">
-          <img src="https://frozencargotransport.com/es/assets/images/9.jpg-500x638.jpg"
-            alt="Operación de montacargas en bodega refrigerada" loading="lazy" width="500" height="638">
-          <img src="../assets/images/zonas-temperatura-camara-fria.jpg"
-            alt="Señalización de zonas de temperatura: congelación, refrigeración, pre-refrigeración y muelle"
-            loading="lazy" width="1086" height="1448">
+
+          <img src="../assets/images/operador-2.jpeg" alt="Operario de FROZEN escaneando la etiqueta de un producto en el almacén de congelados"
+            loading="lazy">
+          <img src="../assets/images/bodega-org.jpeg" alt="Operario de FROZEN en un montacargas y personal de apoyo en un pasillo de la bodega refrigerada"
+            loading="lazy">
+          <img src="../assets/images/calidad%201.jpeg" alt="Operario de FROZEN verificando producto con un lector en la bodega refrigerada"
+            loading="lazy">
+          <img src="../assets/images/caidad%202.jpeg" alt="Estanterías con estibas de producto en la bodega de almacenamiento en frío"
+            loading="lazy">
+          <img src="../assets/images/calidad%203.jpeg" alt="Interior de la bodega refrigerada y zona de almacenamiento"
+            loading="lazy">
         </div>
         <div class="gallery-dots" id="galleryDots"></div>
       </div>
@@ -508,7 +790,7 @@
           <p class="eyebrow">Cobertura</p>
           <h2>De los puertos del Caribe a cualquier punto del país</h2>
           <p>Operamos transporte local, regional y nacional, con traslados directos desde y hacia los puertos de
-            Barranquilla y Cartagena — la puerta de entrada natural del comercio exterior en el Caribe colombiano.</p>
+            Barranquilla y Cartagena, la puerta de entrada natural del comercio exterior en el Caribe colombiano.</p>
           <div class="coverage-list">
             <div class="coverage-item">
               <strong>Región Caribe</strong>
@@ -526,11 +808,10 @@
         </div>
         <div class="map-wrap reveal-up" style="--delay:100ms">
           <div class="map-frame">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.3719574258002!2d-74.7928764!3d11.0106942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef42dafb2de2c49%3A0x56df08b4c28c5d93!2sFrozen%20Log%C3%ADstica%20Y%20Valor%20SAS!5e0!3m2!1sen!2sus!4v1763642521598!5m2!1sen!2sus"
-              width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+            <iframe src="https://www.google.com/maps?q=4.6889316,-74.0870641&z=17&output=embed" width="100%"
+              height="100%" style="border:0;" allowfullscreen="" loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
-              title="Ubicación de FROZEN LOGÍSTICA en Barranquilla, Colombia"></iframe>
+              title="Ubicación de FROZEN CARGO S.A.S. en Bogotá, Colombia"></iframe>
           </div>
         </div>
       </div>
@@ -551,7 +832,6 @@
         <div class="section-head reveal-up">
           <p class="eyebrow">Contacto</p>
           <h2>Escríbanos y le contactamos en menos de 24 horas</h2>
-          <p class="section-lead">También puede comunicarse directamente con el área que necesite.</p>
         </div>
 
         <div class="contact-info-row reveal-up">
@@ -566,28 +846,15 @@
               <span class="contact-role">Línea de atención</span>
               <span class="contact-value">316 017-4589</span>
             </a>
-          </div>
-
-          <div class="contact-extra">
-            <div class="contact-extra-row">
-              <span class="contact-extra-icon" aria-hidden="true">
-                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M22 6l-10 7L2 6" />
-                  <path d="M2 6h20v12H2z" />
-                </svg>
-              </span>
-              <div><span class="contact-extra-label">Correo</span><a
-                  href="mailto:gerencia@frozencargotransport.com">gerencia@frozencargotransport.com</a></div>
-            </div>
-            <div class="contact-extra-row">
-              <span class="contact-extra-icon" aria-hidden="true">
-                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                  <circle cx="12" cy="10" r="3" />
-                </svg>
-              </span>
-              <div><span class="contact-extra-label">Dirección</span><span>Centro Industrial Marysol, Vía 40 No. 71-197
-                  – Bodega 310, Barranquilla, Colombia</span></div>
+            <a class="contact-card" href="mailto:gerencia@frozencargotransport.com">
+              <span class="contact-card-icon" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 6l-10 7L2 6" /><path d="M2 6h20v12H2z" /></svg></span>
+              <span class="contact-role">Correo</span>
+              <span class="contact-value">gerencia@frozencargotransport.com</span>
+            </a>
+            <div class="contact-card">
+              <span class="contact-card-icon" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" /><circle cx="12" cy="10" r="3" /></svg></span>
+              <span class="contact-role">Dirección</span>
+              <span class="contact-value">Cra. 69r #77-58, Bogotá, Colombia</span>
             </div>
           </div>
         </div>
@@ -639,9 +906,9 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <div class="footer-brand">
-        <div class="brand-mark brand-mark--footer"><img src="../assets/images/logo-navbar.png" alt="" width="48"
+        <div class="brand-mark brand-mark--footer"><img src="../assets/images/ICONO-NEGATIVO.png" alt="" width="48"
             height="32" loading="lazy"></div>
-        <span class="brand-text">FROZEN<em>LOGÍSTICA</em></span>
+        <span class="brand-text">FROZEN<em>CARGO TRANSPORT</em></span>
         <p>Almacenamiento en frío, transporte y gestión de inventarios en Barranquilla, Colombia.</p>
         <div class="footer-social">
           <a href="https://www.facebook.com/" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
@@ -663,6 +930,7 @@
         <ul>
           <li><a href="#inicio">Inicio</a></li>
           <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#mision-vision">Misión y Visión</a></li>
           <li><a href="#servicios">Servicios</a></li>
           <li><a href="#clientes">Clientes</a></li>
           <li><a href="#instalaciones">Instalaciones</a></li>
@@ -685,7 +953,7 @@
         <ul>
           <li><a href="tel:+573134339990">+57 313 433-9990</a></li>
           <li><a href="mailto:gerencia@frozencargotransport.com">gerencia@frozencargotransport.com</a></li>
-          <li>Vía 40 No. 71-197, Bodega 310<br>Barranquilla, Colombia</li>
+          <li>Cra. 69r #77-58<br>Bogotá, Colombia</li>
         </ul>
       </div>
     </div>
