@@ -14,8 +14,8 @@
   --frost-dim: #8FB0ED;
   --cyan: #83C4F2;
   --cyan-dim: #0069E6;
-  --amber: #FF8A3D;
-  --amber-dim: #E67328;
+  --amber: #D9A93B;
+  --amber-dim: #BF8F24;
   --slate: #4C5E82;
   --ink: #172234;
   --white: #FFFFFF;
@@ -161,12 +161,12 @@ p {
 .btn-primary {
   background: var(--amber);
   color: var(--ink);
-  box-shadow: 0 8px 24px -8px rgba(255, 138, 61, .6);
+  box-shadow: 0 8px 24px -8px rgba(217, 169, 59, .55);
 }
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 12px 28px -8px rgba(255, 138, 61, .75);
+  box-shadow: 0 12px 28px -8px rgba(217, 169, 59, .7);
   background: var(--amber-dim);
 }
 
@@ -1981,3 +1981,7 @@ html body .service-row:hover {
   .main-nav li.nav-extra { display: none; }
   .main-nav ul { gap: 38px; }
 }
+
+/* Botón dorado */
+.btn-primary { background: linear-gradient(135deg, #E8C25A 0%, #D9A93B 55%, #C4932A 100%); }
+.btn-primary:hover { background: linear-gradient(135deg, #F0CC6A 0%, #E0B040 55%, #C99A2E 100%); }
