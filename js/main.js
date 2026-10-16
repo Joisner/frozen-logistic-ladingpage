@@ -57,14 +57,16 @@
   var statEls = document.querySelectorAll(".stat-num[data-count]");
   function animateCount(el) {
     var target = parseInt(el.getAttribute("data-count"), 10) || 0;
-    if (reduceMotion) { el.textContent = target; return; }
+    var loc = (document.documentElement.lang || 'es').indexOf('es') === 0 ? 'es-CO' : 'en-US';
+    var fmt = function (n) { return n.toLocaleString(loc); };
+    if (reduceMotion) { el.textContent = fmt(target); return; }
     var duration = 1400;
     var start = null;
     function step(ts) {
       if (!start) start = ts;
       var progress = Math.min((ts - start) / duration, 1);
       var eased = 1 - Math.pow(1 - progress, 3);
-      el.textContent = Math.round(eased * target);
+      el.textContent = fmt(Math.round(eased * target));
       if (progress < 1) requestAnimationFrame(step);
     }
     requestAnimationFrame(step);
@@ -196,15 +198,15 @@
 
   var I18N = {
     es: {
-      fillError: "Por favor complete su nombre, un correo válido y su mensaje.",
-      note: "Hemos abierto su programa de correo con la solicitud lista para enviar. Si no se abrió, use el enlace de Gmail de abajo.",
+      fillError: "Por favor completa tu nombre, un correo válido y tu mensaje.",
+      note: "Hemos abierto tu programa de correo con la solicitud lista para enviar. Si no se abrió, usa el enlace de Gmail de abajo.",
       subjectPrefix: "Solicitud de cotización — ",
       greeting: "Hola, quiero solicitar una cotización con los siguientes datos:",
       fields: { name: "Nombre completo", company: "Empresa", phone: "Teléfono", email: "Correo electrónico", service: "Servicio de interés", message: "Mensaje" },
       services: { almacenamiento: "Almacenamiento en frío", transporte: "Transporte de carga", inventario: "Gestión de inventario", otro: "Otro" },
       notProvided: "No especificado",
-      signOff: "Quedo atento(a) a su respuesta. Gracias.",
-      gmailLabel: "¿No se abrió su correo? Ábralo en Gmail →"
+      signOff: "Quedo atento(a) a tu respuesta. Gracias.",
+      gmailLabel: "¿No se abrió tu correo? Ábrelo en Gmail →"
     },
     en: {
       fillError: "Please fill in your name, a valid email and your message.",
