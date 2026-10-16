@@ -14,8 +14,8 @@
   --frost-dim: #8FB0ED;
   --cyan: #83C4F2;
   --cyan-dim: #0069E6;
-  --amber: #D9A93B;
-  --amber-dim: #BF8F24;
+  --amber: #FF7A1A;
+  --amber-dim: #F26200;
   --slate: #4C5E82;
   --ink: #172234;
   --white: #FFFFFF;
@@ -161,12 +161,12 @@ p {
 .btn-primary {
   background: var(--amber);
   color: var(--ink);
-  box-shadow: 0 8px 24px -8px rgba(217, 169, 59, .55);
+  box-shadow: 0 8px 24px -8px rgba(255, 122, 26, .55);
 }
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 12px 28px -8px rgba(217, 169, 59, .7);
+  box-shadow: 0 12px 28px -8px rgba(255, 122, 26, .7);
   background: var(--amber-dim);
 }
 
@@ -1982,10 +1982,10 @@ html body .service-row:hover {
   .main-nav ul { gap: 38px; }
 }
 
-/* Botón dorado */
-.btn-primary { background: linear-gradient(135deg, #E8C25A 0%, #D9A93B 55%, #C4932A 100%); }
-.btn-primary:hover { background: linear-gradient(135deg, #F0CC6A 0%, #E0B040 55%, #C99A2E 100%); }
-
+/* Botón naranja brillante */
+.btn-primary { background: linear-gradient(135deg, #FF9A3C 0%, #FF7A1A 55%, #FF6A00 100%); color: #fff; }
+.btn-primary:hover { background: linear-gradient(135deg, #FFA84F 0%, #FF8528 55%, #FF7410 100%); }
+.main-nav a.btn-primary, .main-nav a.btn-primary:hover { color: #fff; }
 
 /* =====================================================================
    AJUSTES DE REVISIÓN (cliente): azules más brillantes, header limpio,
@@ -2023,7 +2023,7 @@ html body .service-row:hover {
 .main-nav-catalog { display: none; }
 
 @media (max-width: 820px) {
-  .site-header.is-scrolled { background: #fff; }
+  .site-header, .site-header.is-scrolled { background: #fff; backdrop-filter: none !important; -webkit-backdrop-filter: none !important; }
   .brand-logo { height: 34px; }
   .main-nav a { color: #fff; }
   .main-nav a:hover { color: #fff; }
@@ -2050,6 +2050,8 @@ html body .service-row:hover {
 .hero h1 { max-width: 20ch; }
 .hero-lead { font-size: 1.15rem; max-width: 46ch; color: #fff; }
 .hero-cta { margin-bottom: 0; }
+.hero .btn-ghost { color: #fff; border-color: rgba(255, 255, 255, .75); background: rgba(255, 255, 255, .12); backdrop-filter: blur(4px); }
+.hero .btn-ghost:hover { background: rgba(255, 255, 255, .24); color: #fff; border-color: #fff; }
 
 /* ---------- Nosotros: un solo color de texto y foto compacta ---------- */
 #nosotros .split-copy p,
@@ -2152,5 +2154,7 @@ html body .service-row:hover {
 }
 .map-chip i { color: var(--cyan-dim); }
 
-.hero .btn-ghost { color: #fff; border-color: rgba(255, 255, 255, .75); background: rgba(255, 255, 255, .12); backdrop-filter: blur(4px); }
-.hero .btn-ghost:hover { background: rgba(255, 255, 255, .24); color: #fff; border-color: #fff; }
+/* ---------- Botón principal: naranja brillante (va al final para ganar la cascada) ---------- */
+.btn-primary { background: linear-gradient(135deg, #FF9A3C 0%, #FF7A1A 55%, #FF6A00 100%); color: #fff; }
+.btn-primary:hover { background: linear-gradient(135deg, #FFA84F 0%, #FF8528 55%, #FF7410 100%); }
+.main-nav a.btn-primary, .main-nav a.btn-primary:hover { color: #fff; }
