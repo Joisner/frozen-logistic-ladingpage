@@ -2158,3 +2158,27 @@ html body .service-row:hover {
 .btn-primary { background: linear-gradient(135deg, #FF9A3C 0%, #FF7A1A 55%, #FF6A00 100%); color: #fff; }
 .btn-primary:hover { background: linear-gradient(135deg, #FFA84F 0%, #FF8528 55%, #FF7410 100%); }
 .main-nav a.btn-primary, .main-nav a.btn-primary:hover { color: #fff; }
+
+
+/* ===================== AJUSTES FINALES (cliente) ===================== */
+/* Descripciones en el mismo color que "Quiénes somos" (sin azul) */
+:root { --slate: #172234; }
+
+/* Logo con eslogan (referencia: identidad con eslogan debajo) */
+.brand--logo { flex-direction: column; align-items: flex-start; gap: 3px; }
+.brand-tagline {
+  font-size: .62rem; letter-spacing: .03em; color: var(--ink); white-space: nowrap;
+  line-height: 1; opacity: .85;
+}
+@media (max-width: 1180px) { .brand-tagline { display: none; } .brand--logo { flex-direction: row; } }
+
+/* Servicios: imágenes más reducidas */
+.svc-media { aspect-ratio: auto; height: 150px; }
+.svc-body { padding: 18px 22px 22px; }
+
+/* Almacenamiento: foto más compacta */
+#almacenamiento .media-frame, #warehousing .media-frame { max-width: 420px; margin-inline: auto; }
+#almacenamiento .media-frame img, #warehousing .media-frame img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; }
+
+/* Galería final más reducida */
+@media (min-width: 821px) { .gallery { max-width: 760px; margin-inline: auto; aspect-ratio: 16 / 9; } }
